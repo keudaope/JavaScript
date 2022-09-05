@@ -12,7 +12,7 @@ Kts. https://www.w3schools.com/css/css3_box-sizing.asp */
 /* Merkkilajin määritys seuraavasti:
 - font-family tarkoittaa valittua merkkilajia
 - font-size fontin kokoa
-- ling-heigth rivi väliä
+- line-heigth rivi väliä
 - em tarkoittaa suhteessa fontin kokoon
 Kts. lisää https://www.w3schools.com/cssref/css_units.asp */
 
@@ -174,7 +174,7 @@ header {
 }
 
 /* Kellutetaan right-col-id oikealle ja määritetään sen leveys suhteellisena */
-#right-col {
+#right {
   float: right;
   width: 48%;
 }
@@ -271,8 +271,8 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
       Responsiivisuus
 -------------------------*/
 
-/* Näytöt, joiden maksimileveys on 850px */
-@media (max-width:850px) {
+/* Näytöt, joiden maksimileveys on 1023px */
+@media (max-width:1023px) {
   #container {
     width: 80%;
   }
@@ -281,12 +281,13 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
     font-size: 2.2em;
   }
 
-  #left-col, #right-col {
+  #left, #right {
     width: 100%;
-    float: none;
+    clear: both;
+    float: left;
   }
 
-  #left-col .points li{
+  #left .points li{
     width: 80%;
     margin: 0 auto 30px;
     padding: 8px;
@@ -294,7 +295,7 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
     border-radius: 5px;
   }
 
-  #left-col .points img {
+  #left .points img {
     margin-top: 10px;
   }
 
@@ -304,8 +305,8 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
     float: none;
   }
 }
-/* Näytöt, joiden maksimileveys on 609px */
-@media (max-width: 609px) {
+/* Näytöt, joiden maksimileveys on 799px */
+@media (max-width: 799px) {
 
   h2 {
     font-size: 1.7em;
@@ -318,17 +319,22 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
   h4 {
     font-size: 1.2em;
   }
-
+  #left, #right {
+    width: 100%;
+    clear: both;
+    /*float: none;*/
+  }
   #contact-form {
+    clear: both;
     padding: 20px 30px 30px 30px;
   }
 }
-/* Näytöt, joiden maksimileveys on 482px */
-@media (min-width: 482px) {
+/* Näytöt, joiden maksimileveys on 479px */
+@media (min-width: 479px) {
   h1 {
     font-size: 1.6em;
   }
   h2 {
     font-size: 1.2em;
   }
-} */
+}
