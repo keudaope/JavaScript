@@ -5,7 +5,7 @@
 laatikon sisään, eli laatikko ei kasva, vaikka em. komentoja käyttäisi,
 niinkuin tapahtuu, jos box-sizing komentoa ei käytä.
 Kts. https://www.w3schools.com/css/css3_box-sizing.asp */
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -59,6 +59,7 @@ teksti on kirjoitettu h1-tägien sisään, tekstin ensimmäinen kirjain
 kirjoitetaan isoilla kirjaimilla, muut selitetty ylempänä
 Kts. https://www.w3schools.com/cssref/pr_text_text-transform.asp */
 h1 {
+  font-family: 'Courgette', cursive;
   text-transform: capitalize;
   font-size: 2.5em;
   font-weight: bold;
@@ -67,6 +68,7 @@ h1 {
 }
 
 h2, h3, h4 {
+  font-family: 'Great Vibes', cursive;
   margin: 10px 0;
 }
 
@@ -251,7 +253,7 @@ Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
 }
 
 #testimonials blockquote {
-  padding: 20px 30px;
+  padding: -30px 30px 20px 30px;
   width: 90%;
 }
 
